@@ -50,12 +50,13 @@ body, html {
 /* Sektioner (Mission, Tjänster, Varför, Kontakt) */
 .section {
     padding: 50px;
-    font-size: 1.5rem; /* Större text */
+    font-size: 1.5rem;
     background: linear-gradient(90deg, #ffe0b2 0%, #ffcc80 100%);
     color: #333;
     min-height: 60vh;
 }
 
+/* Bilder – FLYTTA TILL HÖGER MITTEN */
 .responsive-image {
     position: fixed;
     right: 20px;
@@ -69,6 +70,13 @@ body, html {
     z-index: 10;
 }
 
+/* Döljs på mindre skärmar */
+@media screen and (max-width: 768px) {
+    .responsive-image {
+        display: none;
+    }
+}
+
 /* Footer */
 footer {
     background-color: #333;
@@ -76,3 +84,4 @@ footer {
     text-align: center;
     padding: 100px;
 }
+
